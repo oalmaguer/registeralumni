@@ -14,4 +14,8 @@ export class AllUsersService {
     return this.http.get(`${baseUrl}/findall`);
   }
 
+  create(data) {
+    return this.http.post(`${baseUrl}/create`, data);
+  }
+
 }

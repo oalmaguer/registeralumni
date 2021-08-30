@@ -4,6 +4,7 @@ const User = db.users;
 // Create and Save a new Tutorial
 exports.create = (req, res) => {
     // Validate request
+    console.log(req);
     if (!req.body.user) {
       res.status(400).send({ message: "Content can not be empty!" });
       return;
