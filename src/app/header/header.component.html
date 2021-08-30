@@ -1,0 +1,30 @@
+<nav class="navbar">
+    <div class="navbar-brand">
+        <li>
+        <a Routerlink href="/" routerLinkActive="active-link">
+            <h2>Home</h2>
+        </a>
+        <li>
+        <a Routerlink href="/findall" routerLinkActive="active-link">
+            <h2>All Users</h2>
+        </a>
+        </li>
+        <li *ngIf="!userdata">
+        <a Routerlink href="/register" routerLinkActive="active-link">
+            <h2>Register</h2>
+        </a>
+        </li>
+        <li *ngIf="userdata">
+        <a Routerlink href="/userdata" routerLinkActive="active-link">
+            <h2>My Data</h2>
+        </a>
+        </li>
+        <li *ngIf="userdata">
+            <a href="#" (click)="clearStorage()">
+                <h2>Clear my data</h2>
+            </a>
+    </div>
+
+    {{message}}
+    
+</nav>

@@ -1,0 +1,25 @@
+<div class="formstyle">
+<form [formGroup]="registerForm" class="registerForm">
+    <h2>Register Here!</h2>
+        <li>
+        <p for="name">Name: </p>
+        <input id="name" type="text" formControlName="name" placeholder="Name" >
+        </li>
+        <li>
+        <p for="last_name">Last Name: </p>
+        <input id="last_name" type="text" formControlName="last_name" placeholder="Last Name">
+        </li>
+        <li>
+        <p for="email">Email: </p>
+        <input id="email" type="text" formControlName="email" placeholder="Email" >
+        </li>
+<button type="button" (click)="onSubmit()" class="btnRegister" >Registrarme!</button>
+    
+</form>
+</div>
+
+<div class="formData" *ngIf="showData">
+    <p>Your name is: <strong>{{name}}</strong></p>
+    <p>Your last name is: <strong>{{last_name}}</strong></p>
+    <p>Your email is: <strong>{{email}}</strong></p>
+</div>

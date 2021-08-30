@@ -1,0 +1,25 @@
+.navbar {
+    margin-left: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: small;
+    background-color: lightgrey;
+    padding: 1rem;
+}
+
+.navbar-brand li {
+    display: inline-block;
+    margin: 0rem 1rem 0rem 1rem;
+}
+
+.navbar-brand li a {
+    color: black;
+}
+
+.navbar-brand li a:hover {
+    color: rgb(41, 160, 230);
+}
+
+.active-link {
+    color: red;
+}
+
